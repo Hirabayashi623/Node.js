@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<title>BBS</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form method="POST">
+		<input type="text" name="item">
+		<input type="submit" value="投稿">
+	</form>
+
+	<ul>
+		<% for (var i = 0; i < items.length; i++){ %>
+			<li><%= items[i] %>
+		<% } %>
+	</ul>
+</body>
+</html>
